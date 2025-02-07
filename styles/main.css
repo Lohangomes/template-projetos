@@ -1,0 +1,55 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 13rem;
+}
+
+.hero-container .conteudo-hero {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  gap: 3rem;
+}
+
+.hero-container .texto-conteudo h1 {
+  font-size: 7.4rem;
+  max-width: 49rem;
+}
+
+.hero-container .texto-conteudo p {
+  line-height: 150%;
+  max-width: 42rem;
+  margin-block: 3rem;
+}
+
+.hero-container .texto-conteudo .btn {
+  padding: 1.5rem 2.5rem;
+  align-self: flex-start;
+  background-color: black;
+  color: #ffff;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-container .texto-conteudo .btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: 1px solid black;
+}
+
+.hero-container .texto-conteudo {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin-top: auto;
+  gap: 1.5rem;
+}
+
+.hero-container .patrocinadores {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  gap: 3rem;
+}

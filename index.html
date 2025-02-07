@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto snap</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <a href="home.html" class="logo">
+        <img src="./images/logo.svg" alt="snap"/>
+      </a>
+
+      <div class="container-menu">
+        <div class="abrir-menu" data-menu="menu"></div>
+        <div class="modal" id="modal">
+          <nav class="area-navegacao">
+            <ul role="list" class="lista">
+              <li data-dropdown>
+                <a href="">Features</a>
+                <ul class="dropdown">
+                  <li>
+                    <img src="./images/icon-todo.svg" alt="icone todo list" />
+                    <a href="#">Todo List</a>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./images/icon-calendar.svg"
+                      alt="icone calendário"
+                    />
+                    <a href="#">Calendar</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/icon-reminders.svg"
+                      alt="icone de sino"
+                    />
+                    <a href="#">Reminders</a>
+                  </li>
+                  <li>
+                    <img src="./images/icon-planning.svg" alt="icone relógio" />
+                    <a href="#">Planning</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-dropdown>
+                <a href="">Company</a>
+                <ul class="dropdown left">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <div class="area-usuario">
+              <a href="#">Login</a>
+              <a href="#">Register</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-container">
+        <div class="conteudo-hero">
+          <div class="texto-conteudo">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+
+            <a class="btn" href="#">Learn more</a>
+          </div>
+
+          <ul class="patrocinadores" role="list">
+            <li><img src="./images/client-databiz.svg" alt="databiz" /></li>
+            <li>
+              <img
+                src="./images/client-audiophile.svg"
+                alt="client audiophile"
+              />
+            </li>
+            <li><img src="./images/client-meet.svg" alt="client meet" /></li>
+            <li><img src="./images/client-maker.svg" alt="client maker" /></li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            media="(max-width:960px )"
+            srcset="./images/image-hero-mobile.png"
+          />
+          <img src="./images/image-hero-desktop.png" alt="hero desktop" />
+        </picture>
+      </section>
+    </main>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
